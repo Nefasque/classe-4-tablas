@@ -6,6 +6,7 @@
 table {
   border: 2px solid #000;
   width: 100%;
+  margin: 20px 0;
 
   border-collapse: collapse;
 }
@@ -19,9 +20,12 @@ table tbody tr {
   border: 1px solid #000;
 }
 
-table tr th {
+table tr th,
+td {
   padding: 10px 0;
   margin: 0;
+  text-align: center;
+  border: 1px solid #000;
 }
 
 table tfoot {
@@ -35,4 +39,15 @@ table tfoot {
 
 .table2 * {
   border: 1px solid #000;
+}
+
+.table3 tbody tr:first-child td,
+.table3 tbody tr,
+.table3 tbody tr:nth-child(2) td,
+.table3 tbody tr:nth-child(3) td {
+  border: none;
+}
+
+tbody tr:hover {
+  background: #eee;
 }
